@@ -114,9 +114,11 @@ services:
         condition: service_healthy
 
 networks:
-  nextcloud:
-    external: true
-  proxy:
-    external: true
-  onlyoffice:
-    external: true
+    onlyoffice:
+        name: onlyoffice
+    nextcloud:
+        external: true
+        name: nextcloud
+    proxy:
+        external: true
+        name: proxy
